@@ -6,7 +6,7 @@ A thin wrapper around Laravel Dusk, allowing you to test your JavaScript applica
 
 Inside of your JavaScript application folder, run the below command:
 
-> **Note**: This will create the folder named `browser` which will contain your test environment.
+> **Note**: This will create the folder named `browser` which will contain your Dusk test environment.
 
 ```bash
 composer create-project stevebauman/laravel-husk browser
