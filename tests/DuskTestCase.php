@@ -17,6 +17,8 @@ abstract class DuskTestCase extends TestCase
     {
         parent::setUp();
 
+        // Here you may setup the Chrome browser to execute all
+        // Laravel Dusk tests using the below URL as the base.
         $this->setupBrowser('http://localhost:3000');
     }
 }

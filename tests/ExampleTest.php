@@ -1,9 +1,10 @@
 <?php
 
 use Laravel\Dusk\Browser;
+use Tests\Pages\ExamplePage;
 
 it('loads', function () {
     $this->browse(function (Browser $browser) {
-        $browser->assertSee('Text');
+        $browser->visit(new ExamplePage)->assertSee('Hello World');
     });
 });

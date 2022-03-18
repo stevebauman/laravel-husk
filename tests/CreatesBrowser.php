@@ -28,9 +28,7 @@ trait CreatesBrowser
         Browser::$baseUrl = $url;
 
         Browser::$storeScreenshotsAt = base_path('storage/screenshots');
-
         Browser::$storeConsoleLogAt = base_path('storage/console');
-
         Browser::$storeSourceAt = base_path('storage/source');
 
         $this->driver->open();
