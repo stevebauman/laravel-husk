@@ -12,6 +12,18 @@ Inside of your JavaScript application folder, run the below command:
 composer create-project stevebauman/laravel-husk browser
 ```
 
+## Folder Structure
+
+```
+javascript-app/
+├── ...
+└── browser/
+    └── tests/
+        ├── ExampleTest.php
+        ├── DuskTestCase.php
+        └── Pages/ExamplePage.php
+```
+
 ## GitHub Actions
 
 ```yaml
