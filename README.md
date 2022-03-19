@@ -42,6 +42,12 @@ javascript-app/
             └── ExamplePage.php
 ```
 
+Then, navigate into the `browser` directory and install the Chrome driver by running the below command:
+
+```
+php application dusk:chrome-driver
+```
+
 ## Usage
 
 Before running your dusk tests, be sure to set the proper base URL to where your JavaScript application will be served from:
@@ -64,6 +70,8 @@ npm run develop
 ```
 
 Then, inside of another terminal, navigate into the `browser` directory and run the below command:
+
+> **Important**: Make sure you've installed the Chrome driver first, via the `php application dusk:chrome-driver` command.
 
 ```bash
 php application pest:dusk
