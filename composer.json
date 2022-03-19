@@ -32,7 +32,11 @@
     },
     "archive": {
         "exclude": [
-            "examples"
+            "examples",
+            "readme.md",
+            ".github",
+            ".gitattributes",
+            ".editorconfig"
         ]
     },
     "minimum-stability": "dev"
