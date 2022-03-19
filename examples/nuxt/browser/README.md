@@ -1,0 +1,66 @@
+# Laravel Husk
+
+A thin wrapper around Laravel Dusk, allowing you to test your JavaScript applications with Pest.
+
+## Installation
+
+Inside of your JavaScript application folder, run the below command:
+
+> **Note**: This will create the folder named `browser` which will contain your test environment.
+
+```bash
+composer create-project stevebauman/laravel-husk browser
+```
+
+## GitHub Actions
+
+```yaml
+name: run-tests
+
+on:
+    push:
+    pull_request:
+    schedule:
+        - cron: "0 0 * * *"
+
+jobs:
+    run-tests:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v2
+            - uses: actions/setup-node@v2
+              with:
+                  cache: "npm"
+
+            - name: Install Javascript Dependencies
+              run: npm install
+
+            - name: Start JavaScript Application
+              run: npm run dev &
+
+            - name: Install Composer Dependencies
+              working-directory: ./browser
+              run: composer install --no-progress --prefer-dist --optimize-autoloader
+
+            - name: Upgrade Chrome Driver
+              working-directory: ./browser
+              run: php application dusk:chrome-driver `/opt/google/chrome/chrome --version | cut -d " " -f3 | cut -d "." -f1`
+
+            - name: Run Dusk Tests
+              working-directory: ./browser
+              run: php application pest:dusk
+
+            - name: Upload Screenshots
+              if: failure()
+              uses: actions/upload-artifact@v2
+              with:
+                  name: screenshots
+                  path: browser/storage/screenshots
+
+            - name: Upload Console Logs
+              if: failure()
+              uses: actions/upload-artifact@v2
+              with:
+                  name: console
+                  path: browser/storage/console
+```
