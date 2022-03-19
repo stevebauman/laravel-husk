@@ -1,6 +1,6 @@
 # Laravel Husk
 
-A thin wrapper around Laravel Dusk, allowing you to test your JavaScript applications with PHP using Pest.
+A thin and light scaffolded Laravel Dusk environment, allowing you to test your JavaScript applications with PHP using Pest.
 
 ## Examples
 
@@ -14,7 +14,7 @@ A thin wrapper around Laravel Dusk, allowing you to test your JavaScript applica
 
 ## Installation
 
-Inside of your JavaScript application folder, run the below command to scaffold the Laravel Husk environment inside of your JavaScript application:
+Inside of your JavaScript application folder, run the below command to scaffold the Laravel Husk environment:
 
 > **Note**: This will create the folder named `browser` which will contain your Laravel Husk test environment.
 
@@ -66,7 +66,7 @@ protected function setUp(): void
 After setting the base URL, serve your JavaScript application:
 
 ```bash
-npm run develop
+npm run dev
 ```
 
 Then, inside of another terminal, navigate into the `browser` directory and run the below command:
