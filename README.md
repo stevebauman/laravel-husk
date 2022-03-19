@@ -4,10 +4,11 @@ A thin wrapper around Laravel Dusk, allowing you to test your JavaScript applica
 
 ## Examples
 
-| JS Framework                                               | Tests                                                                                                     |
-| ---------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- |
-| [NuxtJS](https://github.com/stevebauman/laravel-husk-nuxt) | ![Nuxt Tests](https://github.com/stevebauman/laravel-husk-nuxt/actions/workflows/run-tests.yml/badge.svg) |
-| [NextJS](https://github.com/stevebauman/laravel-husk-next) | ![Next Tests](https://github.com/stevebauman/laravel-husk-next/actions/workflows/run-tests.yml/badge.svg) |
+| JS Framework                                                 | Tests                                                                                                         |
+| ------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------- |
+| [NuxtJS](https://github.com/stevebauman/laravel-husk-nuxt)   | ![Nuxt Tests](https://github.com/stevebauman/laravel-husk-nuxt/actions/workflows/run-tests.yml/badge.svg)     |
+| [NextJS](https://github.com/stevebauman/laravel-husk-next)   | ![Next Tests](https://github.com/stevebauman/laravel-husk-next/actions/workflows/run-tests.yml/badge.svg)     |
+| [Svelte](https://github.com/stevebauman/laravel-husk-svelte) | ![Svelte Tests](https://github.com/stevebauman/laravel-husk-svelte/actions/workflows/run-tests.yml/badge.svg) |
 
 ## Installation
 
