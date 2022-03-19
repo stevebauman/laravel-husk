@@ -30,14 +30,5 @@
             "pestphp/pest-plugin": true
         }
     },
-    "archive": {
-        "exclude": [
-            "examples",
-            "readme.md",
-            ".github",
-            ".gitattributes",
-            ".editorconfig"
-        ]
-    },
     "minimum-stability": "dev"
 }
