@@ -9,7 +9,6 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        path: ./examples/nuxt
         working-directory: ./examples/nuxt
 
     steps:
