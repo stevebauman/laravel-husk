@@ -16,7 +16,7 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           cache: "npm"
-          path: ./examples/nuxt
+          cache-dependency-path: "./examples/nuxt/package-lock.json"
 
       - name: Install JavaScript Dependencies
         run: npm install
