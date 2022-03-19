@@ -71,7 +71,13 @@ After setting the base URL, serve your JavaScript application:
 npm run dev
 ```
 
-Then, inside of another terminal, navigate into the `browser` directory and run the below command:
+Then, inside of another terminal, navigate into the `browser` directory:
+
+```bash
+cd browser
+```
+
+And run the below command:
 
 > **Important**: Make sure you've installed the Chrome driver first, via the `php application dusk:chrome-driver` command.
 
