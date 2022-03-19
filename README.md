@@ -9,18 +9,21 @@ A thin wrapper around Laravel Dusk, allowing you to test your JavaScript applica
 | [NuxtJS](https://github.com/stevebauman/laravel-husk-nuxt)   | ![Nuxt Tests](https://github.com/stevebauman/laravel-husk-nuxt/actions/workflows/run-tests.yml/badge.svg)     |
 | [NextJS](https://github.com/stevebauman/laravel-husk-next)   | ![Next Tests](https://github.com/stevebauman/laravel-husk-next/actions/workflows/run-tests.yml/badge.svg)     |
 | [Svelte](https://github.com/stevebauman/laravel-husk-svelte) | ![Svelte Tests](https://github.com/stevebauman/laravel-husk-svelte/actions/workflows/run-tests.yml/badge.svg) |
+| [Gatsby](https://github.com/stevebauman/laravel-husk-gatsby) | ![Gatsby Tests](https://github.com/stevebauman/laravel-husk-gatsby/actions/workflows/run-tests.yml/badge.svg) |
 
 ## Installation
 
-Inside of your JavaScript application folder, run the below command:
+Inside of your JavaScript application folder, run the below command to scaffold the Laravel Husk environment inside of your JavaScript application:
 
-> **Note**: This will create the folder named `browser` in your JavaScript application which will contain your Laravel Dusk test environment.
+> **Note**: This will create the folder named `browser` which will contain your Laravel Husk test environment.
 
 ```bash
 composer create-project stevebauman/laravel-husk browser
 ```
 
 ## Folder Structure
+
+After scaffolding the test environment, y
 
 ```
 javascript-app/
@@ -33,6 +36,8 @@ javascript-app/
 ```
 
 ## GitHub Actions
+
+You may use the below GitHub action as a template to run your Laravel Dusk tests:
 
 ```yaml
 name: run-tests

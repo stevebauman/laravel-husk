@@ -13,23 +13,6 @@ class Chrome
     use SupportsChrome;
 
     /**
-     * The Chrome browser options.
-     *
-     * @var array
-     */
-    protected $options = [];
-
-    /**
-     * Constructor.
-     *
-     * @param array $options
-     */
-    public function __construct(array $options = [])
-    {
-        $this->options = $options;
-    }
-
-    /**
      * Stop the chrome driver upon destruct.
      *
      * @return void
@@ -100,6 +83,6 @@ class Chrome
      */
     protected function runHeadless()
     {
-        return ($this->options['headless'] ?? true) ? '--headless' : null;
+        return config('laravel-console-dusk.headless', true) ? '--headless' : null;
     }
 }

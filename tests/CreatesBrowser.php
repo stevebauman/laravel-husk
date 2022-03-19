@@ -27,9 +27,9 @@ trait CreatesBrowser
 
         Browser::$baseUrl = $url;
 
-        Browser::$storeScreenshotsAt = base_path('storage/screenshots');
-        Browser::$storeConsoleLogAt = base_path('storage/console');
-        Browser::$storeSourceAt = base_path('storage/source');
+        Browser::$storeScreenshotsAt = config('laravel-console-dusk.paths.screenshots');
+        Browser::$storeConsoleLogAt = config('laravel-console-dusk.paths.log');
+        Browser::$storeSourceAt = config('laravel-console-dusk.paths.source');
 
         $this->driver->open();
     }
