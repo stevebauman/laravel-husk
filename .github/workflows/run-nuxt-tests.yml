@@ -7,9 +7,6 @@ on:
 jobs:
   run-tests:
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: ./examples/nuxt
 
     steps:
       - uses: actions/checkout@v2
@@ -19,9 +16,11 @@ jobs:
           cache-dependency-path: "./examples/nuxt/package-lock.json"
 
       - name: Install JavaScript Dependencies
+        working-directory: ./examples/nuxt
         run: npm install
 
       - name: Run JavaScript Application
+        working-directory: ./examples/nuxt
         run: npm run dev &
 
       - name: Install Composer Dependencies
