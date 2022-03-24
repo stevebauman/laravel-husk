@@ -13,6 +13,7 @@ It allows you to test your JavaScript applications with PHP using [Pest](https:/
 | [Svelte](https://github.com/stevebauman/laravel-husk-svelte)     | ![Svelte Tests](https://github.com/stevebauman/laravel-husk-svelte/actions/workflows/run-tests.yml/badge.svg)     |
 | [Gatsby](https://github.com/stevebauman/laravel-husk-gatsby)     | ![Gatsby Tests](https://github.com/stevebauman/laravel-husk-gatsby/actions/workflows/run-tests.yml/badge.svg)     |
 | [Gridsome](https://github.com/stevebauman/laravel-husk-gridsome) | ![Gridsome Tests](https://github.com/stevebauman/laravel-husk-gridsome/actions/workflows/run-tests.yml/badge.svg) |
+| [Showcode (NuxtJS)](https://github.com/stevebauman/showcode)     | ![Gridsome Tests](https://github.com/stevebauman/showcode/actions/workflows/run-tests.yml/badge.svg)              |
 
 ## Installation
 
