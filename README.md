@@ -80,7 +80,7 @@ cd browser
 
 And run the below command:
 
-> **Important**: Make sure you've installed the Chrome driver first, via the `php application dusk:chrome-driver` command.
+> **Important**: Make sure you've installed the Chrome driver first, via `php application dusk:chrome-driver`
 
 ```bash
 php application pest:dusk
