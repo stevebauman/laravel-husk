@@ -86,6 +86,13 @@ And run the below command:
 php application pest:dusk
 ```
 
+> **Note**: You can also insert the below into the `scripts` section of your `package.json` file for a shortcut:
+> ```json
+> "scripts": {
+>     "test": "cd browser && php application pest:dusk"
+> }
+> ```
+
 ## GitHub Actions
 
 You may use the below GitHub action as a template to run your Laravel Dusk tests:
