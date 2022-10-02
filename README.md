@@ -48,7 +48,7 @@ javascript-app/
 Then, navigate into the `browser` directory and install the Chrome driver by running the below command:
 
 ```
-php application dusk:chrome-driver
+php application dusk:chrome-driver --detect
 ```
 
 ## Usage
@@ -80,7 +80,7 @@ cd browser
 
 And run the below command:
 
-> **Important**: Make sure you've installed the Chrome driver first, via `php application dusk:chrome-driver`
+> **Important**: Make sure you've installed the Chrome driver first, via `php application dusk:chrome-driver --detect`
 
 ```bash
 php application pest:dusk
