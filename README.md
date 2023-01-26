@@ -86,12 +86,24 @@ And run the below command:
 php application pest:dusk
 ```
 
-> **Note**: You can also insert the below into the `scripts` section of your `package.json` file for a shortcut:
+With arguments:
+
+```bash
+php application pest:dusk --order-by=random --filter="it can load"
+```
+
+> **Note**: You may also insert the below JSON into the `scripts` section of your `package.json` file to run your browser tests from your root project directory:
+
 > ```json
 > "scripts": {
 >     "test": "cd browser && php application pest:dusk"
 > }
 > ```
+
+
+```bash
+npm run test
+```
 
 ## GitHub Actions
 
