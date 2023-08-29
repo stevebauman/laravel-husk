@@ -1,6 +1,6 @@
 # Laravel Husk
 
-Larvel Husk is a thin and light scaffolded Laravel Dusk environment.
+Laravel Husk is a thin and light scaffolded Laravel Dusk environment.
 
 It allows you to test your JavaScript applications with PHP using [Pest](https://pestphp.com), without having to scaffold an entire Laravel application.
 
