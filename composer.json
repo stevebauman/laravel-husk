@@ -23,7 +23,7 @@
         "fakerphp/faker": "^1.23",
         "laravel/dusk": "^7.9",
         "mockery/mockery": "^1.6.6",
-        "pestphp/pest": "^2.11"
+        "pestphp/pest": "^2.16"
     },
     "config": {
         "allow-plugins": {
